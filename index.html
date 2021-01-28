@@ -6,7 +6,7 @@
 	<!-- Meta -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	<title>Chris!</title>
+	<title>Chris Chang</title>
 	<meta name="description" content="Christopher Chang" />
 	<link rel="icon" href="assets/walle_eyes.png"/>
 
@@ -31,6 +31,43 @@
 </head>
 
 <body>
+
+    <header id="header">
+        <div id="logo" data-content-field="site-title">  
+          <h1 class="logo" data-shrink-original-size="30" style="letter-spacing: 0.0333333em;"><a href="/">Chris Chang</a></h1>
+          <div class="logo-subtitle" data-shrink-original-size="12" style="letter-spacing: 0.0833333em;">Beep Boop</div>
+        </div>
+        <script>
+          Y.use('squarespace-ui-base', function(Y) {
+            Y.all("#header .logo, #header .logo-subtitle").each(function (text) {
+              text.plug(Y.Squarespace.TextShrink, {
+                parentEl: Y.one('#header'),
+                triggerWidth: 750
+              });
+            });
+          });
+        </script>
+        <div id="topNav" data-content-field="navigation">
+  <nav class="main-nav">
+    <ul>
+        <li class="index-collection active-link">
+              <a href="/">Projects</a>
+        </li>
+        <li class="index-collection">
+              <a href="/experiments">Experiments</a>
+        </li>
+        <li class="page-collection">  
+              <a href="/about">About</a>
+        </li>
+        <li class="blog-collection">
+              <a href="/thinking">etc.</a>
+        </li>
+    </ul>
+  </nav>
+  </div>
+  
+      </header>
+
     <div class="container text-center">
         <h1>hello my name is chris chang and i like boys</h1>
     </div>
