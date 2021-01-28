@@ -31,46 +31,60 @@
 </head>
 
 <body>
+	<header>
+		<div class="row justify-content-center justify-content-md-end">
+			<nav class="mt-5 mx-lg-5 navigation navbar navbar-expand-sm navbar-light" id="nav">
+				<a id="tog" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleFooter()">Menu
+				</a>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<a class="nav-link" href="projects.html"> Projects </a>
+					<a class="nav-link" href="resume.html"> Resume </a>
+					<a class="nav-link" href="about.html"> About </a>
+				</div>
+			</nav>
+		</div>
+	</header>
 
-    <header id="header">
-        <div id="logo" data-content-field="site-title">  
-          <h1 class="logo" data-shrink-original-size="30" style="letter-spacing: 0.0333333em;"><a href="/">Chris Chang</a></h1>
-          <div class="logo-subtitle" data-shrink-original-size="12" style="letter-spacing: 0.0833333em;">Beep Boop</div>
-        </div>
-        <script>
-          Y.use('squarespace-ui-base', function(Y) {
-            Y.all("#header .logo, #header .logo-subtitle").each(function (text) {
-              text.plug(Y.Squarespace.TextShrink, {
-                parentEl: Y.one('#header'),
-                triggerWidth: 750
-              });
-            });
-          });
-        </script>
-        <div id="topNav" data-content-field="navigation">
-  <nav class="main-nav">
-    <ul>
-        <li class="index-collection active-link">
-              <a href="/">Projects</a>
-        </li>
-        <li class="index-collection">
-              <a href="/experiments">Experiments</a>
-        </li>
-        <li class="page-collection">  
-              <a href="/about">About</a>
-        </li>
-        <li class="blog-collection">
-              <a href="/thinking">etc.</a>
-        </li>
-    </ul>
-  </nav>
-  </div>
-  
-      </header>
+	<div class="container text-center justify-content-center">
+		<div data-aos="fade-down" class="aos-init aos-animate">
+			<div class="d-block avatar mx-auto">
+				<a href="about.html">
+					<img class="hoverable" src="assets/headshot.jpg">
+				</a>
+			</div>
+		</div>
+		<div data-aos="fade-up" class="aos-init aos-animate">
+			<h1>Phi Henry Nguyen</h1>
+			<p>
+				<span href="#" class="typewrite typeBlink" data-period="2500" data-type="[ &quot;Student at Carnegie Mellon University&quot;, &quot;Incoming SWE Intern at Capital One&quot;, &quot;Robinhood Enthusiast&quot;, &quot;Avid Thrift Shopper&quot;, &quot;Amateur Home Cook&quot;, &quot;88rising Devotee&quot;, &quot;Honored that you read all of these :)&quot;]"><span class="wrap">Honored that you read</span></span>
+			</p>
+			<div class="container" style="font-size: 1.2rem;">
+				<a href="https://github.com/phi-h-nguyen" target="_blank" rel="noopener" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="github.com/phi-h-nguyen">
+					<i class="fa fa-github fa-lg" aria-hidden="true"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/phi-henry-nguyen/" target="_blank" rel="noopener" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="linkedin.com/in/phi-henry-nguyen">
+					<i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
+				</a>
+				<a href="mailto:hpnguyen@andrew.cmu.edu" target="_blank" rel="noopener" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="hpnguyen@andrew.cmu.edu">
+					<i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+				</a>
+			</div>
+		</div>
+	</div>
 
-    <div class="container text-center">
-        <h1>hello my name is chris chang and i like boys</h1>
-    </div>
+	<footer id="foot" style="position: relative;">
+		<hr width="80%">
+		<p>© 2020 Phi Henry Nguyen</p>
+	</footer>
+
+	<script>
+		$(document).ready(function () {
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
+	<script src="js/tilt.js"></script> <!-- Load Tilt.js library -->
+
+
 
 </body>
 
